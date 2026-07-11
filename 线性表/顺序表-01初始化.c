@@ -15,7 +15,7 @@ void initList(SeqList *L)
 int main() {
 	SeqList list;
 	initList(&list);
-	printf("初始化成功，目前长度占用%d\n", list.length);
-	printf("目前占用内存%zu字节\n", sizeof(list.data));
+	printf("%d\n", list.length);
+	printf("%zu\n", sizeof(list.data));
 	return 0;
 }

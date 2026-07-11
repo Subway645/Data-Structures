@@ -40,11 +40,10 @@ void findElem(SeqList* L, ElemType e) {
 	for (int i = 0;i < L->length;i++) {
 		if (e == L->data[i]) {
 			printf("%d是第%d个元素\n", e, i + 1);
-			return 0;
+			return;
 		}
 	}
 	printf("顺序表中无该元素");
-	return 0;
 }
 int main() {
 	SeqList list;
